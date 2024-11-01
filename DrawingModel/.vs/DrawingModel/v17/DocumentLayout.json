@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDAAEDA-9CC6-4EFF-8370-E8D94E6F1159}|DrawingModel\\DrawingModel.csproj|c:\\users\\a2685\\source\\repos\\drawingmodel\\drawingmodel\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDAAEDA-9CC6-4EFF-8370-E8D94E6F1159}|DrawingModel\\DrawingModel.csproj|solutionrelative:drawingmodel\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|DrawingModel||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDAAEDA-9CC6-4EFF-8370-E8D94E6F1159}|DrawingModel\\DrawingModel.csproj|c:\\users\\a2685\\source\\repos\\drawingmodel\\drawingmodel\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDAAEDA-9CC6-4EFF-8370-E8D94E6F1159}|DrawingModel\\DrawingModel.csproj|solutionrelative:drawingmodel\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDAAEDA-9CC6-4EFF-8370-E8D94E6F1159}|DrawingModel\\DrawingModel.csproj|c:\\users\\a2685\\source\\repos\\drawingmodel\\drawingmodel\\igraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBDAAEDA-9CC6-4EFF-8370-E8D94E6F1159}|DrawingModel\\DrawingModel.csproj|solutionrelative:drawingmodel\\igraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBDAAEDA-9CC6-4EFF-8370-E8D94E6F1159}|DrawingModel\\DrawingModel.csproj|c:\\users\\a2685\\source\\repos\\drawingmodel\\drawingmodel\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|031911c8-6148-4e25-b1b1-44bca9a0c45c"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DrawingModel",
+              "DocumentMoniker": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\DrawingModel.csproj",
+              "RelativeDocumentMoniker": "DrawingModel\\DrawingModel.csproj",
+              "ToolTip": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\DrawingModel.csproj*",
+              "RelativeToolTip": "DrawingModel\\DrawingModel.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-10-24T06:37:24.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\Model.cs",
+              "RelativeDocumentMoniker": "DrawingModel\\Model.cs",
+              "ToolTip": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\Model.cs*",
+              "RelativeToolTip": "DrawingModel\\Model.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwDoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T06:35:01.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Line.cs",
+              "DocumentMoniker": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\Line.cs",
+              "RelativeDocumentMoniker": "DrawingModel\\Line.cs",
+              "ToolTip": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\Line.cs*",
+              "RelativeToolTip": "DrawingModel\\Line.cs*",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T06:34:11.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IGraphics.cs",
+              "DocumentMoniker": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\IGraphics.cs",
+              "RelativeDocumentMoniker": "DrawingModel\\IGraphics.cs",
+              "ToolTip": "C:\\Users\\a2685\\source\\repos\\DrawingModel\\DrawingModel\\IGraphics.cs",
+              "RelativeToolTip": "DrawingModel\\IGraphics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T06:33:56.877Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

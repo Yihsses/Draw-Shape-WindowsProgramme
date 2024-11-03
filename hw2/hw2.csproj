@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\DrawingModel\DrawingModel\IGraphics.cs">
-      <Link>Models\IGraphics.cs</Link>
-    </Compile>
-    <Compile Include="..\..\DrawingModel\DrawingModel\Line.cs">
-      <Link>Models\Line.cs</Link>
-    </Compile>
     <Compile Include="DoubleBufferedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -63,6 +57,8 @@
     </Compile>
     <Compile Include="Models\Decision.cs" />
     <Compile Include="Models\FactoryInterface1.cs" />
+    <Compile Include="Models\IGraphics.cs" />
+    <Compile Include="Models\Line.cs" />
     <Compile Include="Models\Model.cs" />
     <Compile Include="Models\Process.cs" />
     <Compile Include="Models\Rectangle.cs" />

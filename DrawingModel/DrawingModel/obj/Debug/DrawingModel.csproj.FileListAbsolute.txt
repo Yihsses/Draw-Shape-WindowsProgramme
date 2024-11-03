@@ -1,6 +1,0 @@
-C:\Users\a2685\source\repos\DrawingModel\DrawingModel\bin\Debug\DrawingModel.dll
-C:\Users\a2685\source\repos\DrawingModel\DrawingModel\bin\Debug\DrawingModel.pdb
-C:\Users\a2685\source\repos\DrawingModel\DrawingModel\obj\Debug\DrawingModel.csproj.AssemblyReference.cache
-C:\Users\a2685\source\repos\DrawingModel\DrawingModel\obj\Debug\DrawingModel.csproj.CoreCompileInputs.cache
-C:\Users\a2685\source\repos\DrawingModel\DrawingModel\obj\Debug\DrawingModel.dll
-C:\Users\a2685\source\repos\DrawingModel\DrawingModel\obj\Debug\DrawingModel.pdb

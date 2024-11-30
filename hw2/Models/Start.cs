@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,10 @@ namespace hw2.Models
             this.Y = Y;
             this.Shape_Height = Shape_Height;
             this.Shape_Width = Shape_Width;
+        }
+        public override void Draw(Graphics _graphics)
+        {
+            _graphics.DrawEllipse(Pens.Black, this.X, this.Y, this.Shape_Width, this.Shape_Height);
         }
     }
 }

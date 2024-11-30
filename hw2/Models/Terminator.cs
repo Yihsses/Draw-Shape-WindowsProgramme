@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,26 @@ namespace hw2.Models
             this.Y = Y;
             this.Shape_Height = Shape_Height;
             this.Shape_Width = Shape_Width;
+        }
+        public override void Draw(Graphics _graphics)
+        {
+            try
+            {
+                _graphics.DrawArc(Pens.Black, this.X, (float)this.Y, (float)this.Shape_Height, (float)this.Shape_Height, 90, 180);
+                _graphics.DrawArc(Pens.Black, (float)(this.X + this.Shape_Width), (float)this.Y, (float)this.Shape_Height, (float)this.Shape_Height, 270, 180);
+                _graphics.DrawLine(Pens.Black, (float)(this.X + this.Shape_Height / 2), (float)this.Y, (float)(this.X + this.Shape_Width + this.Shape_Height / 2), (float)(this.Y));
+                _graphics.DrawLine(Pens.Black, (float)(this.X + this.Shape_Height / 2), (float)(this.Y + this.Shape_Height), (float)(this.X + this.Shape_Width + this.Shape_Height / 2), (float)(this.Y + this.Shape_Height));
+            }
+            catch
+            {
+
+            }
+        }
+        public override void DrawBoundingBox(Graphics g)
+        {
+            boundingBox.Width = boundingBox.Width * 2;
+            g.DrawRectangle(Pens.Red, boundingBox);
+            boundingBox.Width = boundingBox.Width / 2;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using DrawingForm;
+using DrawingModel;
 using hw2.Models;
 using hw2.PresentationMode;
 using System;
@@ -36,23 +37,16 @@ namespace hw2
             _canvas.MouseUp += HandleCanvasReleased;
             _canvas.MouseMove += HandleCanvasMoved;
             _canvas.Paint += HandleCanvasPaint;
-            Controls.Add(_canvas);
-            //
-            // prepare clear button
-            //
+            DoubleBuffered = true;
 
-            //
-            // prepare presentation model and model
-            //
+            Controls.Add(_canvas);
             model = new Model();
-            _presentationModel = new PresentationModel(ref model,
-_canvas);
+            _presentationModel = new PresentationModel(ref model);
             model._modelChanged += HandleModelChanged;
+            model.EnterPointerState();
+            RefreshUI();
         }
-        public void HandleClearButtonClick(object sender, System.EventArgs e)
-        {
-            model.Clear();
-        }
+
         public void HandleCanvasPressed(object sender,
        System.Windows.Forms.MouseEventArgs e)
         {
@@ -64,6 +58,7 @@ _canvas);
        System.Windows.Forms.MouseEventArgs e)
         {
             model.PointerReleased(e.X, e.Y);
+            RefreshUI(); 
             renew_data_gridView();
         }
         public void HandleCanvasMoved(object sender,
@@ -74,7 +69,9 @@ _canvas);
         public void HandleCanvasPaint(object sender,
        System.Windows.Forms.PaintEventArgs e)
         {
-            _presentationModel.Draw(e.Graphics);
+
+            //_presentationModel.Draw(e.Graphics);
+            model.OnPaint(new WindowsFormsGraphicsAdaptor(e.Graphics));
         }
         public void HandleModelChanged()
         {
@@ -94,7 +91,7 @@ _canvas);
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.shape_comboBox.SelectedIndex = 0;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -105,6 +102,7 @@ _canvas);
 
         private void add_data_button_Click(object sender, EventArgs e)
         {
+
             try
             {
                 model.Add_shape(
@@ -139,21 +137,22 @@ _canvas);
             }
             HandleModelChanged();
         }
-
-
-        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void RefreshUI()
         {
-            foreach (ToolStripButton item in ((ToolStrip)sender).Items)
-            {
-                if (item != e.ClickedItem)
-                    item.Checked = false;
-                else
-                {
-                    now_checked_shap_iteam = item.Text;
-                    item.Checked = true;
-                }
+           _presentationModel.RefreshToolStrip(toolStrip1,ref model, _canvas);
+            Invalidate();
+        }
 
-            }
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e )
+        {
+            _presentationModel.ToolStrip1_ItemClicked(sender, e,ref now_checked_shap_iteam,ref model);
+            RefreshUI(); 
+        }
+
+        private void xbox_TextChanged(object sender, EventArgs e)
+        {
+            _presentationModel.CheckDate(ref add_data_button, ref literalbox, ref xbox, ref ybox, ref hbox, ref wbox, ref X, ref Y, ref H, ref W, ref literal);
+
         }
     }
 }

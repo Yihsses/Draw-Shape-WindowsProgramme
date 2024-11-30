@@ -55,12 +55,13 @@
             this.shape_comboBox = new System.Windows.Forms.ComboBox();
             this.add_data_button = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.start = new System.Windows.Forms.ToolStripButton();
             this.terminator = new System.Windows.Forms.ToolStripButton();
             this.Decision = new System.Windows.Forms.ToolStripButton();
             this.Process = new System.Windows.Forms.ToolStripButton();
+            this.PointState = new System.Windows.Forms.ToolStripButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shap_data_GridView)).BeginInit();
             this.databox.SuspendLayout();
@@ -205,6 +206,7 @@
             // 
             this.W.AutoSize = true;
             this.W.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.W.ForeColor = System.Drawing.Color.Red;
             this.W.Location = new System.Drawing.Point(346, 39);
             this.W.Name = "W";
             this.W.Size = new System.Drawing.Size(18, 13);
@@ -215,6 +217,7 @@
             // 
             this.H.AutoSize = true;
             this.H.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.H.ForeColor = System.Drawing.Color.Red;
             this.H.Location = new System.Drawing.Point(305, 39);
             this.H.Name = "H";
             this.H.Size = new System.Drawing.Size(15, 13);
@@ -226,6 +229,7 @@
             // 
             this.Y.AutoSize = true;
             this.Y.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.Y.ForeColor = System.Drawing.Color.Red;
             this.Y.Location = new System.Drawing.Point(264, 39);
             this.Y.Name = "Y";
             this.Y.Size = new System.Drawing.Size(14, 13);
@@ -236,6 +240,7 @@
             // 
             this.X.AutoSize = true;
             this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.X.ForeColor = System.Drawing.Color.Red;
             this.X.Location = new System.Drawing.Point(222, 39);
             this.X.Name = "X";
             this.X.Size = new System.Drawing.Size(14, 13);
@@ -246,6 +251,7 @@
             // 
             this.literal.AutoSize = true;
             this.literal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.literal.ForeColor = System.Drawing.Color.Red;
             this.literal.Location = new System.Drawing.Point(164, 39);
             this.literal.Name = "literal";
             this.literal.Size = new System.Drawing.Size(31, 13);
@@ -258,6 +264,7 @@
             this.wbox.Name = "wbox";
             this.wbox.Size = new System.Drawing.Size(35, 22);
             this.wbox.TabIndex = 8;
+            this.wbox.TextChanged += new System.EventHandler(this.xbox_TextChanged);
             // 
             // hbox
             // 
@@ -265,6 +272,7 @@
             this.hbox.Name = "hbox";
             this.hbox.Size = new System.Drawing.Size(35, 22);
             this.hbox.TabIndex = 7;
+            this.hbox.TextChanged += new System.EventHandler(this.xbox_TextChanged);
             // 
             // ybox
             // 
@@ -272,6 +280,7 @@
             this.ybox.Name = "ybox";
             this.ybox.Size = new System.Drawing.Size(35, 22);
             this.ybox.TabIndex = 6;
+            this.ybox.TextChanged += new System.EventHandler(this.xbox_TextChanged);
             // 
             // xbox
             // 
@@ -279,6 +288,7 @@
             this.xbox.Name = "xbox";
             this.xbox.Size = new System.Drawing.Size(35, 22);
             this.xbox.TabIndex = 5;
+            this.xbox.TextChanged += new System.EventHandler(this.xbox_TextChanged);
             // 
             // literalbox
             // 
@@ -286,9 +296,11 @@
             this.literalbox.Name = "literalbox";
             this.literalbox.Size = new System.Drawing.Size(53, 22);
             this.literalbox.TabIndex = 4;
+            this.literalbox.TextChanged += new System.EventHandler(this.xbox_TextChanged);
             // 
             // shape_comboBox
             // 
+            this.shape_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.shape_comboBox.FormattingEnabled = true;
             this.shape_comboBox.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.shape_comboBox.Items.AddRange(new object[] {
@@ -304,6 +316,7 @@
             // add_data_button
             // 
             this.add_data_button.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.add_data_button.Enabled = false;
             this.add_data_button.Location = new System.Drawing.Point(7, 39);
             this.add_data_button.Name = "add_data_button";
             this.add_data_button.Size = new System.Drawing.Size(74, 39);
@@ -318,31 +331,14 @@
             this.start,
             this.terminator,
             this.Decision,
-            this.Process});
+            this.Process,
+            this.PointState});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1096, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(30, 100);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "第一頁";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(30, 158);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "第二頁";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // start
             // 
@@ -383,6 +379,33 @@
             this.Process.Size = new System.Drawing.Size(23, 22);
             this.Process.Text = "Process";
             this.Process.ToolTipText = "Process";
+            // 
+            // PointState
+            // 
+            this.PointState.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.PointState.Image = ((System.Drawing.Image)(resources.GetObject("PointState.Image")));
+            this.PointState.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.PointState.Name = "PointState";
+            this.PointState.Size = new System.Drawing.Size(23, 22);
+            this.PointState.Text = "PointState";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(30, 100);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "第一頁";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(30, 158);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "第二頁";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // MyDrawingForm
             // 
@@ -444,6 +467,7 @@
         private System.Windows.Forms.ToolStripButton Process;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolStripButton PointState;
     }
 }
 

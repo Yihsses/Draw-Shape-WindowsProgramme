@@ -6,22 +6,43 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.AxHost;
 
 namespace hw2.Models
 {
-    internal class Model
+    public class Model
     {
 
         public List<Shape> shapes = new List<Shape>();
-        public Model() { }
-        string answer;
         public event ModelChangedEventHandler _modelChanged;
         public delegate void ModelChangedEventHandler();
-        double _firstPointX;
-        double _firstPointY;
+        public double _firstPointX;
+        public double _firstPointY;
         bool _isPressed = false;
-        List<Line> _lines = new List<Line>();
-        Line _hint = new Line();
+        public string nowpointstate = "";
+        public IState pointerState;
+        public IState drawingState;
+        public IState currentState;
+        public Model() 
+        {
+            // 建立pointerState物件，也可以改用Factory替代new
+            pointerState = new PointerState();
+            // 建立drawingState物件，令DrawingState知道PointerState
+            drawingState = new DrawingState((PointerState)pointerState);
+            // 預設為PointerState
+            EnterDrawingState();
+        }
+        public void EnterPointerState()
+        {
+            pointerState.Initialize(this);
+            currentState = pointerState;
+        }
+
+        public void EnterDrawingState()
+        {
+            drawingState.Initialize(this);
+            currentState = drawingState;
+        }
         void Rnew_index()
         {
             for (int i = 0; i < shapes.Count(); i++)
@@ -44,99 +65,60 @@ namespace hw2.Models
         public void Delete_shape(int index)
         {
             shapes.RemoveAt(index);
+            currentState.Initialize(this);
             Rnew_index();
+            NotifyModelChanged();
         }
         public void PointerPressed(double x, double y, string shape_name)
         {
-            if (x > 0 && y > 0)
-            {
-                _firstPointX = x;
-                _firstPointY = y;
-                Add_shape(shape_name, GenerateRandomString(), (int)_firstPointX, (int)_firstPointY, 0, 0);
-                _hint.x1 = _firstPointX;
-                _hint.y1 = _firstPointY;
-                _isPressed = true;
-            }
+            nowpointstate = shape_name;
+            currentState.MouseDown(this, new Point((int)x, (int)y));
         }
         public void PointerMoved(double x, double y)
         {
-            if (_isPressed)
-            {
-                shapes[shapes.Count - 1].Shape_Width = (int)(x - _firstPointX);
-                shapes[shapes.Count - 1].Shape_Height = (int)(y - _firstPointY);
-                _hint.x2 = x;
-                _hint.y2 = y;
-                NotifyModelChanged();
-            }
+            currentState.MouseMove(this, new Point((int)x, (int)y));
+            NotifyModelChanged();
         }
         public void PointerReleased(double x, double y)
         {
-            if (_isPressed)
-            {
-                _isPressed = false;
-                NotifyModelChanged();
-            }
-        }
-        public void Clear()
-        {
-            _isPressed = false;
-            _lines.Clear();
+            currentState.MouseUp(this, new Point((int)x, (int)y));
             NotifyModelChanged();
+
+        }
+
+        public void OnPaint(IGraphics g)
+        {
+            currentState.OnPaint(this, g);
         }
         public void Draw(IGraphics graphics)
         {
-            for (int i = 0; i < shapes.Count; i++)
-            {
-                if (shapes[i].ShapeName == "Start")
-                {
-                    graphics.DrawStart(shapes[i].X, shapes[i].Y, shapes[i].Shape_Width, shapes[i].Shape_Height);
-                }
-                else if (shapes[i].ShapeName == "Terminator")
-                {
-                    graphics.DrawTerminator(shapes[i].X, shapes[i].Y, shapes[i].Shape_Width, shapes[i].Shape_Height);
-                }
-                else if (shapes[i].ShapeName == "Decision")
-                {
-                    graphics.DrawDecision(shapes[i].X, shapes[i].Y, shapes[i].Shape_Width, shapes[i].Shape_Height);
-                }
-                else if (shapes[i].ShapeName == "Process")
-                {
-                    graphics.DrawProcess(shapes[i].X, shapes[i].Y, shapes[i].Shape_Width, shapes[i].Shape_Height);
-                }
-                if (_isPressed == false)
-                {
-                    graphics.DrawString(shapes[i].X + shapes[i].Shape_Width / 2.5, shapes[i].Y + shapes[i].Shape_Height / 2, shapes[i].Literal);
-                }
-                else if (i != shapes.Count - 1)
-                {
-                    graphics.DrawString(shapes[i].X + shapes[i].Shape_Width / 2.5, shapes[i].Y + shapes[i].Shape_Height / 2, shapes[i].Literal);
-
-                }
-            }
-
-            //foreach (Line aLine in _lines)
-            //    aLine.Draw(graphics);
-            //if (_isPressed)
-            //    _hint.Draw(graphics);
+            graphics.Draw(shapes);
         }
         void NotifyModelChanged()
         {
             if (_modelChanged != null)
                 _modelChanged();
         }
-        private string GenerateRandomString()
+        public string GenerateRandomString()
         {
             Random random = new Random();
             string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
             int length = random.Next(3, 11); // 上限為11才能產生10
             StringBuilder result = new StringBuilder(length);
-
-            // 隨機選擇字符
             for (int i = 0; i < length; i++)
             {
                 result.Append(chars[random.Next(chars.Length)]);
             }
             return result.ToString();
+        }
+        public bool IsPointerButtonChecked
+        {
+            get { return currentState == pointerState; }
+        }
+
+        public bool IsDrawingButtonChecked
+        {
+            get { return currentState == drawingState; }
         }
     }
 }

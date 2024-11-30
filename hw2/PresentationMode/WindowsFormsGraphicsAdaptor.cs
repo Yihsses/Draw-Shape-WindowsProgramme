@@ -1,20 +1,42 @@
 ﻿using System.Windows.Forms;
 using System.Drawing;
 using DrawingModel;
+using hw2.Models;
+using System.Collections.Generic;
 
 
 namespace hw2.PresentationMode
 {
-     class WindowsFormsGraphicsAdaptor : IGraphics
+     public class WindowsFormsGraphicsAdaptor : IGraphics
     {
         Graphics _graphics;
-        public WindowsFormsGraphicsAdaptor(Graphics graphics)
+
+        public WindowsFormsGraphicsAdaptor()
+        {
+            Bitmap myBitmap = new Bitmap(100,200);
+            this._graphics = Graphics.FromImage(myBitmap);
+        }
+
+            public WindowsFormsGraphicsAdaptor(Graphics graphics)
         {
             this._graphics = graphics;
         }
         public void ClearAll()
         {
-            
+
+        }
+        public void Draw(List<Shape> shapes)
+        {
+            for (int i = 0; i < shapes.Count; i++)
+            {
+                shapes[i].Draw(this._graphics);
+                this.DrawString(shapes[i].X + shapes[i].Shape_Width / 2.5, shapes[i].Y + shapes[i].Shape_Height / 2, shapes[i].Literal);
+
+            }
+        }
+        public void DrawBoundBox(Shape shape)
+        {
+            shape.DrawBoundingBox(this._graphics);
         }
         public void DrawLine(double x1, double y1, double x2, double y2)
         {
@@ -23,6 +45,7 @@ namespace hw2.PresentationMode
         }
         public void DrawStart(double x1, double y1, double x2, double y2)
         {
+
             _graphics.DrawEllipse(Pens.Black , (float)x1, (float)y1, (float)x2,(float)y2);
         }
         public void DrawTerminator(double x1, double y1, double width, double height)

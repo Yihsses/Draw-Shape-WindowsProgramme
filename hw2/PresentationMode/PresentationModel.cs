@@ -1,22 +1,92 @@
 ﻿using DrawingModel;
 using hw2.Models;
+using System;
+using System.Drawing;
+using System.Runtime.Serialization;
 using System.Windows.Forms;
 
 namespace hw2.PresentationMode
 {
-     class PresentationModel
+     public class PresentationModel
     {
         Model _model;
-        public PresentationModel(ref Model model, Control canvas)
+        public PresentationModel(ref Model model)
         {
             this._model = model;
         }
-        public void Draw(System.Drawing.Graphics graphics)
+
+
+        public void ToolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e,ref string now_checked_shap_iteam,ref Model model)
         {
-            // graphics物件是Paint事件帶進來的，只能在當次Paint使用
-            // 而Adaptor又直接使用graphics，這樣DoubleBuffer才能正確運作
-            // 因此，Adaptor不能重複使用，每次都要重新new
-            _model.Draw(new WindowsFormsGraphicsAdaptor(graphics));
+            foreach (ToolStripButton item in ((ToolStrip)sender).Items)
+            {
+                if (item != e.ClickedItem)
+                    item.Checked = false;
+                else
+                {
+                    now_checked_shap_iteam = item.Text;
+                    item.Checked = true;
+                }
+                if(now_checked_shap_iteam == "PointState")
+                {
+                    model.EnterPointerState();
+                }
+                else
+                {
+                    model.EnterDrawingState();
+                }
+            }
+        }
+        public void RefreshToolStrip(object sender,ref Model model,Panel panel)
+        {
+            foreach (ToolStripButton item in ((ToolStrip)sender).Items)
+            {
+                if (model.IsPointerButtonChecked)
+                {
+                    if(item.Text == "PointState")
+                    {
+                        panel.Cursor = Cursors.Default;
+                        item.Checked = true;
+                    }
+                    else
+                    {
+                        item.Checked = false; 
+                    }
+                }
+                else
+                {
+                    panel.Cursor = Cursors.Cross;
+                }
+            }
+        }
+        public void CheckDate(ref Button Adddate, ref TextBox literbox ,  ref TextBox x_box, ref TextBox y_box , ref TextBox heigh_box , ref TextBox width_box,ref Label x,ref Label y,ref Label heigh, ref Label width ,ref Label literal)
+        {
+            Adddate.Enabled = true; 
+            if (literbox.Text == "")
+            {
+                literal.ForeColor = Color.Red;
+            }
+            else
+            {
+                literal.ForeColor = Color.Black;
+            }
+            ValidateTextBoxIntegerOnly(ref Adddate,x_box, x);
+            ValidateTextBoxIntegerOnly(ref Adddate, y_box, y);
+            ValidateTextBoxIntegerOnly(ref Adddate, width_box, width);
+            ValidateTextBoxIntegerOnly(ref Adddate, heigh_box, heigh);
+        }
+        void ValidateTextBoxIntegerOnly(ref Button Adddate, TextBox textBox,Label label)
+        {
+            // 檢查是否是整數
+            if (!int.TryParse(textBox.Text, out _))
+            {
+                Adddate.Enabled = false; 
+                label.ForeColor = Color.Red;
+            }
+            else
+            {
+                label.ForeColor= Color.Black;
+            }
         }
     }
 }

@@ -60,8 +60,11 @@
             this.Decision = new System.Windows.Forms.ToolStripButton();
             this.Process = new System.Windows.Forms.ToolStripButton();
             this.PointState = new System.Windows.Forms.ToolStripButton();
+            this.Undo = new System.Windows.Forms.ToolStripButton();
+            this.Redo = new System.Windows.Forms.ToolStripButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.LineState = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shap_data_GridView)).BeginInit();
             this.databox.SuspendLayout();
@@ -332,7 +335,10 @@
             this.terminator,
             this.Decision,
             this.Process,
-            this.PointState});
+            this.LineState,
+            this.PointState,
+            this.Undo,
+            this.Redo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1096, 25);
@@ -389,6 +395,26 @@
             this.PointState.Size = new System.Drawing.Size(23, 22);
             this.PointState.Text = "PointState";
             // 
+            // Undo
+            // 
+            this.Undo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Undo.Image = ((System.Drawing.Image)(resources.GetObject("Undo.Image")));
+            this.Undo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Undo.Name = "Undo";
+            this.Undo.Size = new System.Drawing.Size(23, 22);
+            this.Undo.Text = "undo";
+            this.Undo.Click += new System.EventHandler(this.Undo_Click);
+            // 
+            // Redo
+            // 
+            this.Redo.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Redo.Image = ((System.Drawing.Image)(resources.GetObject("Redo.Image")));
+            this.Redo.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Redo.Name = "Redo";
+            this.Redo.Size = new System.Drawing.Size(23, 22);
+            this.Redo.Text = "redo";
+            this.Redo.Click += new System.EventHandler(this.Redo_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(30, 100);
@@ -406,6 +432,16 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "第二頁";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // LineState
+            // 
+            this.LineState.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.LineState.Image = ((System.Drawing.Image)(resources.GetObject("LineState.Image")));
+            this.LineState.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.LineState.Name = "LineState";
+            this.LineState.Size = new System.Drawing.Size(23, 22);
+            this.LineState.Text = "LineState";
+            this.LineState.Click += new System.EventHandler(this.LineState_Click);
             // 
             // MyDrawingForm
             // 
@@ -468,6 +504,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ToolStripButton PointState;
+        private System.Windows.Forms.ToolStripButton Undo;
+        private System.Windows.Forms.ToolStripButton Redo;
+        private System.Windows.Forms.ToolStripButton LineState;
     }
 }
 

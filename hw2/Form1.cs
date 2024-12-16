@@ -21,6 +21,7 @@ namespace hw2
 
     public partial class MyDrawingForm : Form
     {
+
         Model model = new Model();
         PresentationMode.PresentationModel _presentationModel;
         Panel _canvas = new DoubleBufferedPanel();
@@ -92,6 +93,9 @@ namespace hw2
         private void Form1_Load(object sender, EventArgs e)
         {
             this.shape_comboBox.SelectedIndex = 0;
+            Type dgvType = shap_data_GridView.GetType();
+            PropertyInfo pi = dgvType.GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
+            pi.SetValue(this.shap_data_GridView, true, null);
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -113,6 +117,10 @@ namespace hw2
                      Int32.Parse(hbox.Text),
                      Int32.Parse(wbox.Text));
                 shap_data_GridView.Rows.Clear();
+                model.shapes[model.shapes.Count - 1].str_x = Int32.Parse(xbox.Text) + Int32.Parse(wbox.Text) / 2;
+                model.shapes[model.shapes.Count - 1].str_y = Int32.Parse(ybox.Text) + Int32.Parse(hbox.Text) / 2;
+                model.commandManager.Execute(new DrawCommand(model, model.shapes[model.shapes.Count - 1]));
+                RefreshUI();
                 for (int i = 0; i < model.shapes.Count; i++)
                     shap_data_GridView.Rows.Add(model.shapes[i].Getobject());
                 HandleModelChanged();
@@ -139,7 +147,7 @@ namespace hw2
         }
         private void RefreshUI()
         {
-           _presentationModel.RefreshToolStrip(toolStrip1,ref model, _canvas);
+            _presentationModel.RefreshToolStrip(toolStrip1,ref model, _canvas);
             Invalidate();
         }
 
@@ -153,6 +161,28 @@ namespace hw2
         {
             _presentationModel.CheckDate(ref add_data_button, ref literalbox, ref xbox, ref ybox, ref hbox, ref wbox, ref X, ref Y, ref H, ref W, ref literal);
 
+        }
+
+        private void Undo_Click(object sender, EventArgs e)
+        {
+            model.Undo();
+            model.EnterPointerState();
+            RefreshUI();
+            renew_data_gridView();
+        }
+
+        private void Redo_Click(object sender, EventArgs e)
+        {
+     
+            model.Redo();
+            model.EnterPointerState();
+            RefreshUI();
+            renew_data_gridView();
+        }
+
+        private void LineState_Click(object sender, EventArgs e)
+        {
+            model.EnterLineState(); 
         }
     }
 }

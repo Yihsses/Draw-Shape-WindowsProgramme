@@ -73,6 +73,8 @@ namespace hw2.Models.Tests
             model.PointerPressed(3, 4, "Start");
             model.PointerMoved(10, 8);
             model.PointerReleased(10,10);
+            Assert.AreEqual(model.shapes[0].Shape_Width, 7);
+    
 
             model.EnterDrawingState();
             model.PointerPressed(70, 70, "Terminator");
@@ -95,22 +97,30 @@ namespace hw2.Models.Tests
             model.EnterPointerState();
             model.PointerPressed(4, 5, "Start");
             model.PointerMoved(10, 8);
+            model.PointerReleased(20,8);
 
-            model.EnterPointerState();
+
+
+           model.EnterPointerState();
             model.PointerPressed(72, 72, "Terminator");
             model.PointerMoved(16, 17);
+            model.PointerReleased(20, 19);
 
             model.EnterPointerState();
             model.PointerPressed(35, 35, "Process");
             model.PointerMoved(36,35);
+            model.PointerReleased(36, 35);
 
             model.EnterPointerState();
             model.PointerPressed(55, 55, "Decision");
             model.PointerMoved(57, 59);
+            model.PointerReleased(60, 60);
         }
         [TestMethod()]
 
-        public void OnPaintTest()
+        public void 
+            
+            Test()
         {
             WindowsFormsGraphicsAdaptor g = new WindowsFormsGraphicsAdaptor(); 
             model.OnPaint(g);

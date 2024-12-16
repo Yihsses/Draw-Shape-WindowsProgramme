@@ -18,5 +18,7 @@ namespace DrawingModel
         void DrawProcess(double x, double y, double width, double height);
         void DrawString(double x, double y, string shape_name);
         void DrawBoundBox(Shape shape);
+
+        void DrawLinePoint(Shape shape); 
     }
 }

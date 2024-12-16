@@ -12,8 +12,9 @@ namespace hw2.Models
 {
     public class Model
     {
-
+        public CommandManager commandManager = new CommandManager();
         public List<Shape> shapes = new List<Shape>();
+        public List<Point> literal_xy = new List<Point>();
         public event ModelChangedEventHandler _modelChanged;
         public delegate void ModelChangedEventHandler();
         public double _firstPointX;
@@ -23,12 +24,15 @@ namespace hw2.Models
         public IState pointerState;
         public IState drawingState;
         public IState currentState;
+        public IState lineState;
         public Model() 
         {
             // 建立pointerState物件，也可以改用Factory替代new
+            lineState = new DrawLineState();
             pointerState = new PointerState();
             // 建立drawingState物件，令DrawingState知道PointerState
             drawingState = new DrawingState((PointerState)pointerState);
+
             // 預設為PointerState
             EnterDrawingState();
         }
@@ -42,6 +46,11 @@ namespace hw2.Models
         {
             drawingState.Initialize(this);
             currentState = drawingState;
+        }
+        public void EnterLineState()
+        {
+            lineState.Initialize(this);
+            currentState = lineState;
         }
         void Rnew_index()
         {
@@ -61,6 +70,17 @@ namespace hw2.Models
                    h,
                    w
             ));
+        }
+        public void Add_shpae(Shape shape)
+        {
+            shapes.Add(shape);
+            NotifyModelChanged();
+        }
+        public void DeleteShape()
+        {
+            shapes.RemoveAt(shapes.Count - 1);
+            NotifyModelChanged();
+
         }
         public void Delete_shape(int index)
         {
@@ -85,7 +105,6 @@ namespace hw2.Models
             NotifyModelChanged();
 
         }
-
         public void OnPaint(IGraphics g)
         {
             currentState.OnPaint(this, g);
@@ -93,6 +112,18 @@ namespace hw2.Models
         public void Draw(IGraphics graphics)
         {
             graphics.Draw(shapes);
+        
+        }
+        public void Undo()
+        {
+            commandManager.Undo();
+            NotifyModelChanged();
+        }
+
+        public void Redo()
+        {
+            commandManager.Redo();
+            NotifyModelChanged();
         }
         void NotifyModelChanged()
         {
@@ -119,6 +150,21 @@ namespace hw2.Models
         public bool IsDrawingButtonChecked
         {
             get { return currentState == drawingState; }
+        }
+        public bool IsRedoEnabled
+        {
+            get
+            {
+                return commandManager.IsRedoEnabled;
+            }
+        }
+
+        public bool IsUndoEnabled
+        {
+            get
+            {
+                return commandManager.IsUndoEnabled;
+            }
         }
     }
 }

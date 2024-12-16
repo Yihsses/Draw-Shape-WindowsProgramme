@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DrawingModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,8 @@ namespace hw2.Models
                     return new Process(ID, ShapeName, Literal, X, Y, Shape_Height, Shape_Width);
                 case "Decision":
                     return new Decision(ID, ShapeName, Literal, X, Y, Shape_Height, Shape_Width);
-
+                case "Line":
+                    return new Line(ID, ShapeName, Literal, ref X, ref Y, Shape_Height, Shape_Width);
                 default:
                     throw new Exception("missing");
             }

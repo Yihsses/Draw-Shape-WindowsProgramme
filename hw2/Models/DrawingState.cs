@@ -55,12 +55,10 @@ namespace hw2.Models
         {
             ul_pressed = false;
             m.shapes[m.shapes.Count - 1].Literal = m.GenerateRandomString();
-
-            // 畫完之後，將圖形加入到圖形清單中
-            //   m.shapes.Add(shape);
-            // 等return後，Model才會真正切換到PointerState
+            m.shapes[m.shapes.Count - 1].str_x = ul_point.X + (int)(shape.Shape_Width / 2.5);
+            m.shapes[m.shapes.Count-1].str_y = ul_point.Y + shape.Shape_Height / 2;
+            m.commandManager.Execute(new DrawCommand(m, m.shapes[m.shapes.Count - 1]));
             m.EnterPointerState();
-            // 指定PointerState選取剛剛新增的圖形，不能與前面那行對調順序
             pointerState.AddSelectedShape(m.shapes[m.shapes.Count - 1]);
         }
 

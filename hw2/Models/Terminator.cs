@@ -38,6 +38,19 @@ namespace hw2.Models
             boundingBox.Width = boundingBox.Width * 2;
             g.DrawRectangle(Pens.Red, boundingBox);
             boundingBox.Width = boundingBox.Width / 2;
+
+            str_boundingBox.Width = Literal.Length * 7;
+            str_boundingBox.Height = 15;
+            g.DrawRectangle(Pens.Red, str_boundingBox);
+            g.FillEllipse(Brushes.Orange, str_boundingBox.X + str_boundingBox.Width / 2 - 4, str_boundingBox.Y - 4, 8, 8);
+        }
+        public override bool BoundingBoxContainStringBox()
+        {
+            boundingBox.Width = boundingBox.Width * 2;
+            bool temp = boundingBox.Contains(str_boundingBox);
+            boundingBox.Width = boundingBox.Width / 2;
+
+            return (temp);
         }
     }
 }

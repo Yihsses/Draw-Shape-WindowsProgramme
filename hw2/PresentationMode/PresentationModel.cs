@@ -41,6 +41,14 @@ namespace hw2.PresentationMode
         {
             foreach (ToolStripButton item in ((ToolStrip)sender).Items)
             {
+                if(item.Text == "undo")
+                {
+                    item.Enabled = model.IsUndoEnabled; 
+                }
+                if(item.Text == "redo")
+                {
+                    item.Enabled = model.IsRedoEnabled;
+                }
                 if (model.IsPointerButtonChecked)
                 {
                     if(item.Text == "PointState")

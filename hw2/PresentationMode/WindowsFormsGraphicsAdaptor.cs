@@ -30,13 +30,18 @@ namespace hw2.PresentationMode
             for (int i = 0; i < shapes.Count; i++)
             {
                 shapes[i].Draw(this._graphics);
-                this.DrawString(shapes[i].X + shapes[i].Shape_Width / 2.5, shapes[i].Y + shapes[i].Shape_Height / 2, shapes[i].Literal);
+                this.DrawString(shapes[i].str_x, shapes[i].str_y, shapes[i].Literal);
 
             }
         }
         public void DrawBoundBox(Shape shape)
         {
             shape.DrawBoundingBox(this._graphics);
+        }
+
+        public void DrawLinePoint(Shape shape)
+        {
+            shape.DrawLineingPoint(this._graphics);
         }
         public void DrawLine(double x1, double y1, double x2, double y2)
         {

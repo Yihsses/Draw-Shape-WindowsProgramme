@@ -15,8 +15,10 @@ namespace hw2.Models
         const int CTRL_KEY = 17;
         // 紀錄是否按下Ctrl鍵
         bool isCtrlKeyDown;
-        bool ispress = false; 
-
+        bool ispress = false;
+        bool isshapemove = false;
+        bool isStringmove = false;
+        bool isExecute = true; 
         public void Initialize(Model m)
         {
             // 當進入PointerState時，應該尚未選取任何形狀，因此清空selectedShapes
@@ -26,21 +28,19 @@ namespace hw2.Models
 
         public void MouseDown(Model m, Point point)
         {
-            ispress = true;
-            // 檢查是否有選到圖形，使用相反順序檢查，以便選到最上層的圖形
+
             foreach (Shape shape in Enumerable.Reverse(m.shapes))
             {
                 if (shape.IsPointInEllipse(point))
                 {
-                    
-                        // 若沒按下Ctrl鍵，則清空selectedShapes，再新增選取的圖形
-                        selectedShapes.Clear();
-                        selectedShapes.Add(shape);
-                    
+                    isExecute = false; 
+                    ispress = true;
+                    //  m.commandManager.Execute(new MoveCommand(m, shape));
+                    selectedShapes.Clear();
+                    selectedShapes.Add(shape);
                     return;
                 }
             }
-            // 若沒有選到任何圖形，則清空selectedShapes，但是如果按下Ctrl鍵，則selectedShapes不變
             if (!isCtrlKeyDown)
                 selectedShapes.Clear();
         }
@@ -55,25 +55,56 @@ namespace hw2.Models
         {
             try
             {
+                if (!isExecute)
+                {
+                    m.commandManager.Execute(new MoveCommand(m, selectedShapes[0]));
+                    isExecute = true; 
+                }
                 if (ispress)
                 {
-                    selectedShapes[0].X = point.X - selectedShapes[0].Shape_Width/2;
-                    selectedShapes[0].Y = point.Y - selectedShapes[0].Shape_Height / 2;
+                    if (Math.Abs(point.X - (selectedShapes[0].str_x +( selectedShapes[0].Literal.Length * 7 / 2))) <= 10 && Math.Abs(point.Y - selectedShapes[0].str_y) <= 20 && isshapemove == false)
+                    {
+                        isStringmove = true;
+                        if (selectedShapes[0].BoundingBoxContainStringBox())
+                        {
+                            selectedShapes[0].str_x = point.X - selectedShapes[0].Literal.Length * 7 / 2;
+                            selectedShapes[0].str_y = point.Y;
+                        }
+                        else
+                        {
+                            selectedShapes[0].str_x = selectedShapes[0].X + selectedShapes[0].Shape_Width / 2;
+                            selectedShapes[0].str_y = selectedShapes[0].Y + selectedShapes[0].Shape_Height / 2;
+
+                        }
+                    }
+                    else if(isStringmove == false )
+                    {
+
+                        isshapemove = true;
+                        int dx, dy;
+                        dx = selectedShapes[0].str_x - selectedShapes[0].X;
+                        dy = selectedShapes[0].Y - selectedShapes[0].str_y;
+                        selectedShapes[0].X = point.X - selectedShapes[0].Shape_Width / 2;
+                        selectedShapes[0].Y = point.Y - selectedShapes[0].Shape_Height / 2;
+                        selectedShapes[0].str_x = selectedShapes[0].X + dx;
+                        selectedShapes[0].str_y = selectedShapes[0].Y - dy;
+                        selectedShapes[0].renewLinePoint();
+                    }
                 }
             }
             catch
             {
 
             }
-
-            // 可以考慮改為繼承，省掉空的實作
-            // do nothing
         }
 
         public void MouseUp(Model m, Point point)
         {
+
+            isExecute = true; 
+            isStringmove = false; 
+            isshapemove = false; 
             ispress = false; 
-            // do nothing
         }
 
         public void OnPaint(Model m, IGraphics g)

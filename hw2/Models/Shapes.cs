@@ -50,7 +50,7 @@ namespace hw2.Models
             g.DrawRectangle(Pens.Red, str_boundingBox);
             g.FillEllipse(Brushes.Orange, str_boundingBox.X + str_boundingBox.Width / 2-4, str_boundingBox.Y-4, 8, 8);
         }
-        public void renewLinePoint()
+        public virtual void  renewLinePoint()
         {
             LinePoint.Clear();
             LinePoint.Add(new Point(X + Shape_Width, Y + Shape_Height / 2));
@@ -59,7 +59,7 @@ namespace hw2.Models
             LinePoint.Add(new Point(X + Shape_Width / 2, Y + Shape_Height));
         }
 
-        public void DrawLineingPoint(Graphics g)
+        public virtual void DrawLineingPoint(Graphics g)
         {
             LinePoint.Clear();
             LinePoint.Add(new Point(X + Shape_Width, Y + Shape_Height / 2));
@@ -95,7 +95,7 @@ namespace hw2.Models
         }
 
 
-        public bool IsPointInEllipse(Point point)
+        public virtual bool IsPointInEllipse(Point point)
         {
             GraphicsPath path = new GraphicsPath();
             path.AddEllipse(boundingBox);

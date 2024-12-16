@@ -93,6 +93,7 @@ namespace hw2.Models
         {
             nowpointstate = shape_name;
             currentState.MouseDown(this, new Point((int)x, (int)y));
+
         }
         public void PointerMoved(double x, double y)
         {

@@ -5,6 +5,7 @@ namespace DrawingForm
     {
         public DoubleBufferedPanel()
         {
+           
             DoubleBuffered = true;
         }
     }

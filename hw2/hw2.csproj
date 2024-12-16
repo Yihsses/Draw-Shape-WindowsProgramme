@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="Models\CommandManager.cs" />
     <Compile Include="Models\Decision.cs" />
+    <Compile Include="Models\DeleteCommand.cs" />
     <Compile Include="Models\DrawCommand.cs" />
     <Compile Include="Models\DrawingState.cs" />
     <Compile Include="Models\DrawLineState.cs" />
@@ -73,12 +74,22 @@
     <Compile Include="Models\Shapes.cs" />
     <Compile Include="Models\Start.cs" />
     <Compile Include="Models\Terminator.cs" />
+    <Compile Include="Models\TextEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\TextEditForm.Designer.cs">
+      <DependentUpon>TextEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TextChangeCommand.cs" />
     <Compile Include="PresentationMode\PresentationModel.cs" />
     <Compile Include="PresentationMode\WindowsFormsGraphicsAdaptor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Models\TextEditForm.resx">
+      <DependentUpon>TextEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

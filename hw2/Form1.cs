@@ -30,6 +30,11 @@ namespace hw2
         public MyDrawingForm()
         {
             InitializeComponent();
+
+            this.DoubleBuffered = true;
+            Type dgvType = shap_data_GridView.GetType();
+            PropertyInfo pi = dgvType.GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
+            pi.SetValue(shap_data_GridView, true, null);
             _canvas.Dock = DockStyle.None;
             _canvas.Location = new Point(150, 40);
             _canvas.Cursor = Cursors.Cross;
@@ -38,7 +43,7 @@ namespace hw2
             _canvas.MouseUp += HandleCanvasReleased;
             _canvas.MouseMove += HandleCanvasMoved;
             _canvas.Paint += HandleCanvasPaint;
-            DoubleBuffered = true;
+         
 
             Controls.Add(_canvas);
             model = new Model();
@@ -53,7 +58,8 @@ namespace hw2
         {
 
             model.PointerPressed(e.X, e.Y, now_checked_shap_iteam);
-
+             RefreshUI();
+            renew_data_gridView();
         }
         public void HandleCanvasReleased(object sender,
        System.Windows.Forms.MouseEventArgs e)
@@ -136,6 +142,7 @@ namespace hw2
         {
             if (e.ColumnIndex == 0 && e.RowIndex >= 0)
             {
+                model.commandManager.Execute(new DeleteCommand(model, model.shapes[e.RowIndex], e.RowIndex));
                 shap_data_GridView.Rows.RemoveAt(e.RowIndex);
                 model.Delete_shape(e.RowIndex);
                 for (int i = 0; i < shap_data_GridView.RowCount; i++)
@@ -143,6 +150,7 @@ namespace hw2
                     shap_data_GridView.Rows[i].Cells[1].Value = model.shapes[i].ID;
                 }
             }
+            RefreshUI();
             HandleModelChanged();
         }
         private void RefreshUI()
@@ -184,5 +192,6 @@ namespace hw2
         {
             model.EnterLineState(); 
         }
+
     }
 }

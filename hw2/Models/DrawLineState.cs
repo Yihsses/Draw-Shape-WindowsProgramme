@@ -12,7 +12,7 @@ namespace hw2.Models
     internal class DrawLineState : IState
     {
         Point ul_point, lr_point;
-      
+
         List<Shape> selectedShapes = new List<Shape>();
         bool ul_pressed;            // 記錄左上角按了沒
         Shape shape = new Shape();        // 記錄正在畫的圖
@@ -27,28 +27,28 @@ namespace hw2.Models
         {
 
             double temp = 9999;
-            if(selectedShapes.Count() != 0 )
+            if (selectedShapes.Count() != 0)
             {
-                ul_pressed = true;
+
                 for (int i = 0; i <= selectedShapes[0].LinePoint.Count - 1; i++)
                 {
                     double len = Math.Sqrt(Math.Pow(point.X - selectedShapes[0].LinePoint[i].X, 2) + Math.Pow((point.Y) - selectedShapes[0].LinePoint[i].Y, 2));
                     if (len <= 8 && len < temp)
                     {
-                        firstshape = selectedShapes[0]; 
+                        firstshape = selectedShapes[0];
                         temp = len;
-                        shape.FirstLineIndex = i; 
+                        shape.FirstLineIndex = i;
                         ul_point = lr_point = selectedShapes[0].LinePoint[i];
                         shape.X = selectedShapes[0].LinePoint[i].X;
                         shape.Y = selectedShapes[0].LinePoint[i].Y;
                     }
                 }
             }
-            if(temp != 9999)
+            if (temp != 9999)
             {
-                
-                m.Add_shape("Line", "",  (int)shape.X  , (int)shape.Y, 0, 0);
-                m.shapes[m.shapes.Count - 1].FirstLineIndex = shape.FirstLineIndex; 
+                ul_pressed = true;
+                m.Add_shape("Line", "", (int)shape.X, (int)shape.Y, 0, 0);
+                m.shapes[m.shapes.Count - 1].FirstLineIndex = shape.FirstLineIndex;
                 m.shapes[m.shapes.Count - 1].fathershape.Add(selectedShapes[0]);
             }
         }
@@ -56,19 +56,19 @@ namespace hw2.Models
         public void MouseMove(Model m, Point point)
         {
             selectedShapes.Clear();
-                foreach (Shape shape in Enumerable.Reverse(m.shapes))
+            foreach (Shape shape in Enumerable.Reverse(m.shapes))
+            {
+                if (shape.IsPointInEllipse(point) && shape.ShapeName != "Line")
                 {
-                    if (shape.IsPointInEllipse(point) && shape.ShapeName != "Line")
-                    {
-                        //  m.commandManager.Execute(new MoveCommand(m, shape));
-                        selectedShapes.Add(shape);
+                    //  m.commandManager.Execute(new MoveCommand(m, shape));
+                    selectedShapes.Add(shape);
                     if (!ul_pressed)
                     {
                         return;
                     }
-                        
-                    }
+
                 }
+            }
             if (ul_pressed)
             {
                 m.shapes[m.shapes.Count - 1].Shape_Width = (int)(point.X - ul_point.X);
@@ -83,7 +83,7 @@ namespace hw2.Models
         {
             if (ul_pressed)
             {
-   
+
                 int secondlineindex = 0;
                 double temp = 9999;
                 Point secondpoint = new Point();
@@ -94,21 +94,32 @@ namespace hw2.Models
                         double len = Math.Sqrt(Math.Pow(point.X - selectedShapes[0].LinePoint[i].X, 2) + Math.Pow((point.Y) - selectedShapes[0].LinePoint[i].Y, 2));
                         if (len <= 8 && len < temp)
                         {
-                            secondlineindex = i; 
+                            secondlineindex = i;
                             temp = len;
                             secondpoint.X = selectedShapes[0].LinePoint[i].X;
                             secondpoint.Y = selectedShapes[0].LinePoint[i].Y;
                         }
                     }
                 }
-                if (firstshape == selectedShapes[0])
+                try
+                {
+                    if (firstshape == selectedShapes[0])
+                    {
+                        ul_pressed = false;
+                        m.EnterPointerState();
+                        m.DeleteShape();
+                        return;
+                    }
+                }
+                catch
                 {
                     ul_pressed = false;
                     m.EnterPointerState();
                     m.DeleteShape();
-                    return;
+                    return; 
                 }
-                    if (temp != 9999)
+
+                if (temp != 9999)
                 {
                     m.shapes[m.shapes.Count - 1].Shape_Width = (int)(secondpoint.X - ul_point.X);
                     m.shapes[m.shapes.Count - 1].Shape_Height = (int)(secondpoint.Y - ul_point.Y);
@@ -135,7 +146,7 @@ namespace hw2.Models
             {
                 g.DrawLinePoint(selectedShapes[0]);
             }
-    
+
             // 畫出虛線的提示
         }
 

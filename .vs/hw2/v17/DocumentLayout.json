@@ -3,55 +3,91 @@
   "WorkspaceRootPath": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\drawlinestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\drawlinestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\terminator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\terminator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\pointerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\pointerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\movecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\drawcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\drawcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2tests\\models\\modeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2tests\\models\\modeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|solutionrelative:hw2tests\\models\\modeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\presentationmode\\presentationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\presentationmode\\presentationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\igraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\deletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\deletecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\drawcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\drawcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\doublebufferedpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\doublebufferedpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\doublebufferedpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\doublebufferedpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\pointerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\pointerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\textchangecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\textchangecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\texteditform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\texteditform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\texteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\texteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\texteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\texteditform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\line.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\igraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\igraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\process.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\process.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\drawingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\drawingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\drawingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\factoryinterface1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\factoryinterface1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\factoryinterface1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -59,20 +95,8 @@
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\presentationmode\\windowsformsgraphicsadaptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\icommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\commandmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,17 +106,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Model.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Model.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\Model.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Model.cs",
               "RelativeToolTip": "hw2\\Models\\Model.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAIwEoAAAAJAAAA",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAUwFAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T08:32:59.017Z",
               "IsPinned": true,
@@ -100,29 +124,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "ModelTests.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Models\\ModelTests.cs",
               "RelativeDocumentMoniker": "hw2Tests\\Models\\ModelTests.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Models\\ModelTests.cs",
               "RelativeToolTip": "hw2Tests\\Models\\ModelTests.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAAgwF4AAAAAAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAcwF4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T04:24:25.712Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DrawLineState.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DrawLineState.cs",
-              "RelativeDocumentMoniker": "hw2\\Models\\DrawLineState.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DrawLineState.cs",
-              "RelativeToolTip": "hw2\\Models\\DrawLineState.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAAwIAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:37:44.55Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -132,72 +142,212 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Shapefactory.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapefactory.cs",
-              "RelativeDocumentMoniker": "hw2\\Models\\Shapefactory.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapefactory.cs",
-              "RelativeToolTip": "hw2\\Models\\Shapefactory.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "DocumentIndex": 0,
+              "Title": "Terminator.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Terminator.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\Terminator.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Terminator.cs",
+              "RelativeToolTip": "hw2\\Models\\Terminator.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAwwDoAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T08:42:21.427Z",
+              "WhenOpened": "2024-12-16T11:36:34.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "PresentationModel.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\PresentationMode\\PresentationModel.cs",
+              "RelativeDocumentMoniker": "hw2\\PresentationMode\\PresentationModel.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\PresentationMode\\PresentationModel.cs",
+              "RelativeToolTip": "hw2\\PresentationMode\\PresentationModel.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:28:41.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DoubleBufferedPanel.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\DoubleBufferedPanel.cs",
+              "RelativeDocumentMoniker": "hw2\\DoubleBufferedPanel.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\DoubleBufferedPanel.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "hw2\\DoubleBufferedPanel.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:10:55.737Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Shapes.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapes.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\Shapes.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapes.cs",
               "RelativeToolTip": "hw2\\Models\\Shapes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAyAAAA",
+              "ViewState": "AQIAACgAAAAAAAAAAADwvzYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T09:16:20.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PointerState.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\PointerState.cs",
-              "RelativeDocumentMoniker": "hw2\\Models\\PointerState.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\PointerState.cs",
-              "RelativeToolTip": "hw2\\Models\\PointerState.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAAwGcAAAAcAAAA",
+              "DocumentIndex": 7,
+              "Title": "CommandManager.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\CommandManager.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\CommandManager.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\CommandManager.cs",
+              "RelativeToolTip": "hw2\\Models\\CommandManager.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA0wCEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:47:56.266Z",
+              "WhenOpened": "2024-12-14T07:22:22.711Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
+              "RelativeDocumentMoniker": "hw2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "hw2\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T07:27:48.699Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
+              "RelativeDocumentMoniker": "hw2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
+              "RelativeToolTip": "hw2\\Form1.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAmwJgAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:05:39.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DoubleBufferedPanel.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\DoubleBufferedPanel.cs",
+              "RelativeDocumentMoniker": "hw2\\DoubleBufferedPanel.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\DoubleBufferedPanel.cs",
+              "RelativeToolTip": "hw2\\DoubleBufferedPanel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAcAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:10:57.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "DrawCommand.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DrawCommand.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\DrawCommand.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DrawCommand.cs",
               "RelativeToolTip": "hw2\\Models\\DrawCommand.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAdAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T07:34:49.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MoveCommand.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\MoveCommand.cs",
-              "RelativeDocumentMoniker": "hw2\\Models\\MoveCommand.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\MoveCommand.cs",
-              "RelativeToolTip": "hw2\\Models\\MoveCommand.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAArwDMAAAAjAAAA",
+              "DocumentIndex": 8,
+              "Title": "DeleteCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DeleteCommand.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\DeleteCommand.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DeleteCommand.cs",
+              "RelativeToolTip": "hw2\\Models\\DeleteCommand.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:05:04.045Z",
+              "WhenOpened": "2024-12-16T11:29:48.599Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
+              "Title": "PointerState.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\PointerState.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\PointerState.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\PointerState.cs",
+              "RelativeToolTip": "hw2\\Models\\PointerState.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwCMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T07:47:56.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TextChangeCommand.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextChangeCommand.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\TextChangeCommand.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextChangeCommand.cs",
+              "RelativeToolTip": "hw2\\Models\\TextChangeCommand.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAADwvxgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T10:48:06.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TextEditForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextEditForm.Designer.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\TextEditForm.Designer.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextEditForm.Designer.cs",
+              "RelativeToolTip": "hw2\\Models\\TextEditForm.Designer.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T10:32:49.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TextEditForm.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextEditForm.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\TextEditForm.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextEditForm.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "hw2\\Models\\TextEditForm.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T10:33:29.445Z",
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TextEditForm.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextEditForm.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\TextEditForm.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\TextEditForm.cs",
+              "RelativeToolTip": "hw2\\Models\\TextEditForm.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAIwCsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T10:31:11.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Shapefactory.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapefactory.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\Shapefactory.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapefactory.cs",
+              "RelativeToolTip": "hw2\\Models\\Shapefactory.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAIBJwAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T08:42:21.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "DrawingState.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DrawingState.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\DrawingState.cs",
@@ -210,20 +360,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 18,
               "Title": "IGraphics.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\IGraphics.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\IGraphics.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\IGraphics.cs",
               "RelativeToolTip": "hw2\\Models\\IGraphics.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABUAAAAaAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T07:28:54.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 17,
               "Title": "Line.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Line.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\Line.cs",
@@ -236,20 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Process.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Process.cs",
-              "RelativeDocumentMoniker": "hw2\\Models\\Process.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Process.cs",
-              "RelativeToolTip": "hw2\\Models\\Process.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAkAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T08:20:02.436Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "FactoryInterface1.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\FactoryInterface1.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\FactoryInterface1.cs",
@@ -262,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "WindowsFormsGraphicsAdaptor.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\PresentationMode\\WindowsFormsGraphicsAdaptor.cs",
               "RelativeDocumentMoniker": "hw2\\PresentationMode\\WindowsFormsGraphicsAdaptor.cs",
@@ -275,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "ICommand.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\ICommand.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\ICommand.cs",
@@ -284,44 +421,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-14T07:23:06.757Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
-              "RelativeDocumentMoniker": "hw2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
-              "RelativeToolTip": "hw2\\Form1.cs",
-              "ViewState": "AQIAAKYAAAAAAAAAAAAcwLgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T11:28:17.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Form1.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
-              "RelativeDocumentMoniker": "hw2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "hw2\\Form1.cs [\u8A2D\u8A08]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:27:48.699Z",
-              "EditorCaption": " [\u8A2D\u8A08]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CommandManager.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\CommandManager.cs",
-              "RelativeDocumentMoniker": "hw2\\Models\\CommandManager.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\CommandManager.cs",
-              "RelativeToolTip": "hw2\\Models\\CommandManager.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAADwvxsAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T07:22:22.711Z",
               "EditorCaption": ""
             }
           ]

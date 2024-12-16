@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -51,6 +52,40 @@ namespace hw2.Models
             boundingBox.Width = boundingBox.Width / 2;
 
             return (temp);
+        }
+        public override bool IsPointInEllipse(Point point)
+        {
+            GraphicsPath path = new GraphicsPath();
+            GraphicsPath path2 = new GraphicsPath();
+            boundingBox.Width = boundingBox.Width * 2;
+            path.AddEllipse(boundingBox);
+            boundingBox.Width = boundingBox.Width / 2;
+            path2.AddEllipse(boundingBox);
+            return path.IsVisible(point) || path2.IsVisible(point);
+        }
+        public override void DrawLineingPoint(Graphics g)
+        {
+            LinePoint.Clear();
+            boundingBox.Width = boundingBox.Width * 2;
+            LinePoint.Add(new Point(X + Shape_Width, Y + Shape_Height / 2));
+            LinePoint.Add(new Point(X, Y + Shape_Height / 2));
+            LinePoint.Add(new Point(X + Shape_Width / 2, Y));
+            LinePoint.Add(new Point(X + Shape_Width / 2, Y + Shape_Height));
+            boundingBox.Width = boundingBox.Width / 2;
+            for (int i = 0; i < LinePoint.Count(); i++)
+            {
+                g.FillEllipse(Brushes.Gray, LinePoint[i].X - 4, LinePoint[i].Y - 4, 8, 8);
+            }
+        }
+        public override void renewLinePoint()
+        {
+            Shape_Width = Shape_Width * 2; 
+            LinePoint.Clear();
+            LinePoint.Add(new Point(X + Shape_Width, Y + Shape_Height / 2));
+            LinePoint.Add(new Point(X, Y + Shape_Height / 2));
+            LinePoint.Add(new Point(X + Shape_Width / 2, Y));
+            LinePoint.Add(new Point(X + Shape_Width / 2, Y + Shape_Height));
+            Shape_Width = Shape_Width / 2;
         }
     }
 }

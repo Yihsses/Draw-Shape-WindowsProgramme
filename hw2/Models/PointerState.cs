@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Windows.Input;
 namespace hw2.Models
 {
@@ -18,7 +19,8 @@ namespace hw2.Models
         bool ispress = false;
         bool isshapemove = false;
         bool isStringmove = false;
-        bool isExecute = true; 
+        bool isExecute = true;
+        int StrBoxClickNum = 0;
         public void Initialize(Model m)
         {
             // 當進入PointerState時，應該尚未選取任何形狀，因此清空selectedShapes
@@ -33,7 +35,30 @@ namespace hw2.Models
             {
                 if (shape.IsPointInEllipse(point))
                 {
-                    isExecute = false; 
+                    if (selectedShapes.Count >= 1)
+                    {
+                        if (selectedShapes[0] == shape && (Math.Abs(point.X - (selectedShapes[0].str_x + (selectedShapes[0].Literal.Length * 7 / 2))) <= 10))
+                        {
+                            StrBoxClickNum += 1;
+                        }
+                        else
+                        {
+                            StrBoxClickNum = 0;
+                        }
+                        if (StrBoxClickNum >= 2)
+                        {
+                            using (TextEditForm textEditForm = new TextEditForm(""))
+                                if (textEditForm.ShowDialog() == DialogResult.OK)
+                                {
+                                    m.commandManager.Execute(new TextChangeCommand(m, selectedShapes[0]));
+                                    string result = textEditForm.EditedText;
+                                    selectedShapes[0].Literal = result;
+                                }
+                            StrBoxClickNum = 0;
+                            return;
+                        }
+                    }
+                    isExecute = false;
                     ispress = true;
                     //  m.commandManager.Execute(new MoveCommand(m, shape));
                     selectedShapes.Clear();
@@ -58,11 +83,11 @@ namespace hw2.Models
                 if (!isExecute)
                 {
                     m.commandManager.Execute(new MoveCommand(m, selectedShapes[0]));
-                    isExecute = true; 
+                    isExecute = true;
                 }
                 if (ispress)
                 {
-                    if (Math.Abs(point.X - (selectedShapes[0].str_x +( selectedShapes[0].Literal.Length * 7 / 2))) <= 10 && Math.Abs(point.Y - selectedShapes[0].str_y) <= 20 && isshapemove == false)
+                    if (Math.Abs(point.X - (selectedShapes[0].str_x + (selectedShapes[0].Literal.Length * 7 / 2))) <= 10 && Math.Abs(point.Y - selectedShapes[0].str_y) <= 20 && isshapemove == false)
                     {
                         isStringmove = true;
                         if (selectedShapes[0].BoundingBoxContainStringBox())
@@ -77,7 +102,7 @@ namespace hw2.Models
 
                         }
                     }
-                    else if(isStringmove == false )
+                    else if (isStringmove == false)
                     {
 
                         isshapemove = true;
@@ -101,10 +126,10 @@ namespace hw2.Models
         public void MouseUp(Model m, Point point)
         {
 
-            isExecute = true; 
-            isStringmove = false; 
-            isshapemove = false; 
-            ispress = false; 
+            isExecute = true;
+            isStringmove = false;
+            isshapemove = false;
+            ispress = false;
         }
 
         public void OnPaint(Model m, IGraphics g)
@@ -112,7 +137,7 @@ namespace hw2.Models
             //畫出所有的Ellipse
             g.Draw(m.shapes);
             // 畫出被選中圖形的外框
-           
+
             foreach (Shape shape in selectedShapes)
                 g.DrawBoundBox(shape);
         }

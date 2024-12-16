@@ -38,3 +38,4 @@ C:\Users\Yihss\OneDrive\桌面\視窗程式設計\hw3\hw3\hw2\obj\Debug\hw2.cspr
 C:\Users\Yihss\OneDrive\桌面\視窗程式設計\hw3\hw3\hw2\obj\Debug\hw2.csproj.CoreCompileInputs.cache
 C:\Users\Yihss\OneDrive\桌面\視窗程式設計\hw3\hw3\hw2\obj\Debug\hw2.exe
 C:\Users\Yihss\OneDrive\桌面\視窗程式設計\hw3\hw3\hw2\obj\Debug\hw2.pdb
+C:\Users\Yihss\OneDrive\桌面\視窗程式設計\Windows-Programming-hw2\hw2\obj\Debug\hw2.Models.TextEditForm.resources

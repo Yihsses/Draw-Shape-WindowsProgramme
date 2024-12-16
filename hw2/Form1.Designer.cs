@@ -59,12 +59,12 @@
             this.terminator = new System.Windows.Forms.ToolStripButton();
             this.Decision = new System.Windows.Forms.ToolStripButton();
             this.Process = new System.Windows.Forms.ToolStripButton();
+            this.LineState = new System.Windows.Forms.ToolStripButton();
             this.PointState = new System.Windows.Forms.ToolStripButton();
             this.Undo = new System.Windows.Forms.ToolStripButton();
             this.Redo = new System.Windows.Forms.ToolStripButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.LineState = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shap_data_GridView)).BeginInit();
             this.databox.SuspendLayout();
@@ -77,7 +77,7 @@
             this.說明ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1096, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1054, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -198,7 +198,7 @@
             this.databox.Controls.Add(this.literalbox);
             this.databox.Controls.Add(this.shape_comboBox);
             this.databox.Controls.Add(this.add_data_button);
-            this.databox.Location = new System.Drawing.Point(699, 70);
+            this.databox.Location = new System.Drawing.Point(652, 52);
             this.databox.Name = "databox";
             this.databox.Size = new System.Drawing.Size(385, 456);
             this.databox.TabIndex = 2;
@@ -341,7 +341,7 @@
             this.Redo});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1096, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1054, 25);
             this.toolStrip1.TabIndex = 3;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -385,6 +385,16 @@
             this.Process.Size = new System.Drawing.Size(23, 22);
             this.Process.Text = "Process";
             this.Process.ToolTipText = "Process";
+            // 
+            // LineState
+            // 
+            this.LineState.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.LineState.Image = ((System.Drawing.Image)(resources.GetObject("LineState.Image")));
+            this.LineState.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.LineState.Name = "LineState";
+            this.LineState.Size = new System.Drawing.Size(23, 22);
+            this.LineState.Text = "LineState";
+            this.LineState.Click += new System.EventHandler(this.LineState_Click);
             // 
             // PointState
             // 
@@ -433,21 +443,11 @@
             this.button2.Text = "第二頁";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // LineState
-            // 
-            this.LineState.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.LineState.Image = ((System.Drawing.Image)(resources.GetObject("LineState.Image")));
-            this.LineState.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.LineState.Name = "LineState";
-            this.LineState.Size = new System.Drawing.Size(23, 22);
-            this.LineState.Text = "LineState";
-            this.LineState.Click += new System.EventHandler(this.LineState_Click);
-            // 
             // MyDrawingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1096, 550);
+            this.ClientSize = new System.Drawing.Size(1054, 524);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.toolStrip1);

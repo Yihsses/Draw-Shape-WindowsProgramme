@@ -58,6 +58,7 @@ namespace hw2
         {
 
             model.PointerPressed(e.X, e.Y, now_checked_shap_iteam);
+            //_presentationModel.ToolStripButtonDisable(toolStrip1, ref model);
              RefreshUI();
             renew_data_gridView();
         }

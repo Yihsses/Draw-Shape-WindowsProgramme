@@ -37,6 +37,19 @@ namespace hw2.PresentationMode
                 }
             }
         }
+        public void ToolStripButtonDisable(object sender, ref Model model)
+        {
+            //if (model.IsLineButtonChecked)
+            //{
+            //    foreach (ToolStripButton item in ((ToolStrip)sender).Items)
+            //    {
+            //            if(item.Text != "LineState")
+            //            {
+            //                item.Enabled = false;
+            //            }
+            //    }
+            //}
+        }
         public void RefreshToolStrip(object sender,ref Model model,Panel panel)
         {
             foreach (ToolStripButton item in ((ToolStrip)sender).Items)

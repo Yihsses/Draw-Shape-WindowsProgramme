@@ -152,6 +152,10 @@ namespace hw2.Models
         {
             get { return currentState == drawingState; }
         }
+        public bool IsLineButtonChecked
+        {
+            get { return currentState == lineState; }
+        }
         public bool IsRedoEnabled
         {
             get

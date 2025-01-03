@@ -181,7 +181,6 @@ namespace hw2Tests
             // FindElementsByXPath("//*") 會把 "row" node 也抓出來，因此 i 要從 1 開始以跳過 "row" node
             for (int i = 1; i < rowDatas.Count; i++)
             {
-
                 Assert.AreEqual(data[i - 1], rowDatas[i].Text.Replace("(null)", ""));
             }
         }
@@ -209,6 +208,43 @@ namespace hw2Tests
                 }
             }
         }
+        public void DataGridViewAddData(string shapename,string literal , string x , string y , string h , string w)
+        {
+            WindowsElement element = _driver.FindElementByAccessibilityId("shape_comboBox");
+     
+            element.Click();
+            IList<WindowsElement> shape = _driver.FindElementsByName(shapename);
+            shape[1].Click();
+            element = _driver.FindElementByAccessibilityId("literalbox");
+            element.SendKeys(literal);
+            element = _driver.FindElementByAccessibilityId("xbox");
+            element.SendKeys(x);
+            element = _driver.FindElementByAccessibilityId("ybox");
+            element.SendKeys(y);
+            element = _driver.FindElementByAccessibilityId("hbox");
+            element.SendKeys(h);
+            element = _driver.FindElementByAccessibilityId("wbox");
+            element.SendKeys(w);
+            element = _driver.FindElementByName("新增");
+            element.Click(); 
+
+        }
+        public void TextAlter(int startX, int startY,string str)
+        {
+            var action = new Actions(_driver);
+            action.MoveByOffset(startX, startY).DoubleClick().Perform();
+            WindowsElement element = _driver.FindElementByName("文字編輯方塊");
+            element.SendKeys(str);
+            element = _driver.FindElementByName("確定");
+            element.Click();
+        }
+        
+        public void AssertText(string name, int rowIndex, string str)
+        {
+            var dataGridView = _driver.FindElementByAccessibilityId(name);
+            var rowDatas = dataGridView.FindElementByName($"資料列 {rowIndex}").FindElementsByXPath("//*");
+            Assert.AreEqual(rowDatas[4].Text, str); 
+        }
         public void DragAndDropByCoordinates(int startX, int startY, int endX, int endY)
         {
             // 計算目標點的偏移量
@@ -217,7 +253,7 @@ namespace hw2Tests
 
             // 模擬滑鼠移動操作
             var action = new Actions(_driver);
-
+  
     
 
             // 將滑鼠移動到起點並按住

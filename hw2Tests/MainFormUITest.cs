@@ -46,11 +46,15 @@ namespace hw2.Models.Tests
 
         private void RunScriptShapeDraw()
         {
-            _robot.ClickButton("Start");
+
+            _robot.ClickButton("Start"); 
             _robot.AssertCheck("Start", true);
             _robot.AssertCheck("Process", false);
             _robot.DragAndDropByCoordinates(200, 81, 99, 70);
-     
+    
+
+            _robot.TextAlter(-35, -40,"Test");
+            _robot.AssertText("shap_data_GridView", 0, "Test"); 
             _robot.AssertCheck("PointState", true);
             _robot.AssertCheck("Start", false);
             _robot.AssertCheck("Process", false);
@@ -121,7 +125,29 @@ namespace hw2.Models.Tests
                     new string[] { "150", "335", "60", "150" },
                     new string[] { "235", "153", "90", "112" }
                 };
-            for (int i = 1; i <= 3; i++)
+            for (int i = 1; i <= testdata.Count; i++)
+            {
+                _robot.AssertDataGridViewShape("shap_data_GridView", i - 1, testdata[i - 1]);
+            }
+
+            _robot.DataGridViewAddData("Start", "lop", "50", "60", "40", "50");
+            _robot.DataGridViewAddData("Process", "te", "200", "20", "10", "23");
+            _robot.DataGridViewAddData("Terminator", "df", "70", "55", "13", "22");
+            _robot.DataGridViewAddData("Decision", "cx", "100", "62", "30", "20");
+
+            testdata = new List<string[]>
+                {
+
+                    new string[] { "133", "223", "60", "90" },
+                    new string[] { "150", "335", "60", "150" },
+                    new string[] { "235", "153", "90", "112" },
+                    new string[] { "50", "60", "40", "50" },
+                    new string[] { "200", "20", "10", "23" },
+                    new string[] { "70", "55", "13", "22" },
+                    new string[] { "100", "62", "30", "20" }
+
+                };
+            for (int i = 1; i <= testdata.Count; i++)
             {
                 _robot.AssertDataGridViewShape("shap_data_GridView", i - 1, testdata[i - 1]);
             }

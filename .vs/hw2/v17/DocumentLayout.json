@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2tests\\mainformuitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2tests\\mainformuitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|solutionrelative:hw2tests\\mainformuitest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2tests\\models\\modeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|solutionrelative:hw2tests\\models\\modeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2tests\\robot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|solutionrelative:hw2tests\\robot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|c:\\users\\yihss\\onedrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\windows-programming-hw2\\hw2\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2tests\\models\\modeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{537EF29A-1049-4412-8E7E-0BAD51954556}|hw2Tests\\hw2Tests.csproj|solutionrelative:hw2tests\\models\\modeltests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\drawingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\drawingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\shapes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +43,8 @@
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\presentationmode\\windowsformsgraphicsadaptor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\drawingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\drawingstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\models\\pointerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\models\\pointerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|solutionrelative:hw2\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45F63CEE-9940-47BC-A85F-5E29E7A9CC34}|hw2\\hw2.csproj|C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\presentationmode\\presentationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,29 +118,28 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u8A2D\u8A08]",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
+              "RelativeDocumentMoniker": "hw2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs [\u8A2D\u8A08]",
+              "RelativeToolTip": "hw2\\Form1.cs [\u8A2D\u8A08]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T07:27:48.699Z",
+              "IsPinned": true,
+              "EditorCaption": " [\u8A2D\u8A08]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Model.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Model.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\Model.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Model.cs",
               "RelativeToolTip": "hw2\\Models\\Model.cs",
-              "ViewState": "AQIAALcAAAAAAAAAAAAmwMcAAAAlAAAA",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAkwKwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T08:32:59.017Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModelTests.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Models\\ModelTests.cs",
-              "RelativeDocumentMoniker": "hw2Tests\\Models\\ModelTests.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Models\\ModelTests.cs",
-              "RelativeToolTip": "hw2Tests\\Models\\ModelTests.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAiwEsAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T04:24:25.712Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -152,7 +151,7 @@
               "RelativeDocumentMoniker": "hw2Tests\\MainFormUITest.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\MainFormUITest.cs",
               "RelativeToolTip": "hw2Tests\\MainFormUITest.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAUwGUAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAIcAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T15:31:31.618Z",
               "IsPinned": true,
@@ -160,13 +159,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Robot.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Robot.cs",
               "RelativeDocumentMoniker": "hw2Tests\\Robot.cs",
               "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Robot.cs",
               "RelativeToolTip": "hw2Tests\\Robot.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAMwFwAAAAfAAAA",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAQwNwAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T15:32:13.319Z",
               "IsPinned": true,
@@ -178,19 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Shapes.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapes.cs",
-              "RelativeDocumentMoniker": "hw2\\Models\\Shapes.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapes.cs",
-              "RelativeToolTip": "hw2\\Models\\Shapes.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAzwCEAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:16:20.466Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "DrawingState.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\DrawingState.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\DrawingState.cs",
@@ -198,11 +185,12 @@
               "RelativeToolTip": "hw2\\Models\\DrawingState.cs",
               "ViewState": "AQIAADkAAAAAAAAAAAAAADkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T08:43:40.603Z"
+              "WhenOpened": "2024-12-16T08:43:40.603Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "WindowsFormsGraphicsAdaptor.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\PresentationMode\\WindowsFormsGraphicsAdaptor.cs",
               "RelativeDocumentMoniker": "hw2\\PresentationMode\\WindowsFormsGraphicsAdaptor.cs",
@@ -214,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IGraphics.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\IGraphics.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\IGraphics.cs",
@@ -226,7 +214,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
+              "RelativeDocumentMoniker": "hw2\\Form1.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
+              "RelativeToolTip": "hw2\\Form1.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAA8wHoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T11:05:39.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModelTests.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Models\\ModelTests.cs",
+              "RelativeDocumentMoniker": "hw2Tests\\Models\\ModelTests.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2Tests\\Models\\ModelTests.cs",
+              "RelativeToolTip": "hw2Tests\\Models\\ModelTests.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAYwEoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T04:24:25.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Shapes.cs",
+              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapes.cs",
+              "RelativeDocumentMoniker": "hw2\\Models\\Shapes.cs",
+              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\Shapes.cs",
+              "RelativeToolTip": "hw2\\Models\\Shapes.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAzwCEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T09:16:20.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "PointerState.cs",
               "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Models\\PointerState.cs",
               "RelativeDocumentMoniker": "hw2\\Models\\PointerState.cs",
@@ -235,17 +261,6 @@
               "ViewState": "AQIAAF0AAAAAAAAAAAAmwHEAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-03T19:44:16.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form1.cs [\u8A2D\u8A08]",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
-              "RelativeDocumentMoniker": "hw2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs [\u8A2D\u8A08]",
-              "RelativeToolTip": "hw2\\Form1.cs [\u8A2D\u8A08]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:27:48.699Z"
             },
             {
               "$type": "Document",
@@ -258,18 +273,6 @@
               "ViewState": "AQIAADgAAAAAAAAAAAAkwFEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-16T11:36:34.616Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
-              "RelativeDocumentMoniker": "hw2\\Form1.cs",
-              "ToolTip": "C:\\Users\\Yihss\\OneDrive\\\u684C\u9762\\\u8996\u7A97\u7A0B\u5F0F\u8A2D\u8A08\\Windows-Programming-hw2\\hw2\\Form1.cs",
-              "RelativeToolTip": "hw2\\Form1.cs",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAswJwAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T11:05:39.731Z"
             },
             {
               "$type": "Document",

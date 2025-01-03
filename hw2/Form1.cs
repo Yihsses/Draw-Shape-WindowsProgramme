@@ -127,6 +127,11 @@ namespace hw2
                 model.shapes[model.shapes.Count - 1].str_x = Int32.Parse(xbox.Text) + Int32.Parse(wbox.Text) / 2;
                 model.shapes[model.shapes.Count - 1].str_y = Int32.Parse(ybox.Text) + Int32.Parse(hbox.Text) / 2;
                 model.commandManager.Execute(new DrawCommand(model, model.shapes[model.shapes.Count - 1]));
+                xbox.Text = "";
+                ybox.Text = "";
+                hbox.Text = "";
+                wbox.Text = "";
+                literalbox.Text = ""; 
                 RefreshUI();
                 for (int i = 0; i < model.shapes.Count; i++)
                     shap_data_GridView.Rows.Add(model.shapes[i].Getobject());

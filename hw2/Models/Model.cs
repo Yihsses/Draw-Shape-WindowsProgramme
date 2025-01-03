@@ -3,9 +3,12 @@ using hw2.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using static System.Windows.Forms.AxHost;
 
 namespace hw2.Models
@@ -143,6 +146,92 @@ namespace hw2.Models
             }
             return result.ToString();
         }
+
+        public async Task Load()
+        {
+            try
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "Drawing Files (*.mydrawing)|*.mydrawing";
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = openFileDialog.FileName;
+
+                    // 讀取檔案並反序列化圖形資料
+                    using (StreamReader reader = new StreamReader(filePath))
+                    {
+                        shapes.Clear(); // 清空現有的圖形資料
+
+                        string line;
+                        while ((line = reader.ReadLine()) != null)
+                        {
+                            var parts = line.Split(',');
+                            if (parts.Length == 8)
+                            {
+                                // 根據讀取的資料建立圖形並加入列表
+                                string name = parts[0];
+                                string literal = parts[1];
+                                int x = int.Parse(parts[2]);
+                                int y = int.Parse(parts[3]);
+                                int width = int.Parse(parts[4]);
+                                int height = int.Parse(parts[5]);
+
+                                // 在這裡根據需要創建不同的圖形物件
+                                Add_shape(name, literal, x, y, width, height);
+                                await Task.Delay(100);
+                                shapes[shapes.Count -1].str_x = int.Parse(parts[6]);
+                                shapes[shapes.Count - 1].str_y = int.Parse(parts[7]);
+                                await Task.Delay(100);
+                                NotifyModelChanged();
+
+                            }
+                        }
+                    }
+
+                    // 通知模型已經更新
+                    NotifyModelChanged();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("讀取檔案失敗: " + ex.Message);
+            }
+        }
+        public async Task SaveAsync()
+        {
+            try
+            {
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "Drawing Files (*.mydrawing)|*.mydrawing";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog.FileName;
+
+
+                    // 模擬延遲以減慢儲存過程
+                    await Task.Delay(3000);
+
+                    // 序列化圖形資料並寫入檔案
+                    using (StreamWriter writer = new StreamWriter(filePath))
+                    {
+                        foreach (var shape in shapes)
+                        {
+                            // 將每個圖形的資料寫入檔案，你可以根據圖形類別進行調整
+                            writer.WriteLine($"{shape.ShapeName},{shape.Literal},{shape.X},{shape.Y},{shape.Shape_Width},{shape.Shape_Height},{shape.str_x},{shape.str_y}");
+                        }
+                    }
+
+                    // 儲存完成後啟用存檔按鈕
+ 
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("儲存檔案失敗: " + ex.Message);
+            }
+        }
+
+
         public bool IsPointerButtonChecked
         {
             get { return currentState == pointerState; }

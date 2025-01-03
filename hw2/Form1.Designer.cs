@@ -63,6 +63,8 @@
             this.PointState = new System.Windows.Forms.ToolStripButton();
             this.Undo = new System.Windows.Forms.ToolStripButton();
             this.Redo = new System.Windows.Forms.ToolStripButton();
+            this.Save = new System.Windows.Forms.ToolStripButton();
+            this.Load = new System.Windows.Forms.ToolStripButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
@@ -338,7 +340,9 @@
             this.LineState,
             this.PointState,
             this.Undo,
-            this.Redo});
+            this.Redo,
+            this.Save,
+            this.Load});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1054, 25);
@@ -425,6 +429,26 @@
             this.Redo.Text = "redo";
             this.Redo.Click += new System.EventHandler(this.Redo_Click);
             // 
+            // Save
+            // 
+            this.Save.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Save.Image = ((System.Drawing.Image)(resources.GetObject("Save.Image")));
+            this.Save.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(23, 22);
+            this.Save.Text = "Save";
+            this.Save.Click += new System.EventHandler(this.Save_Click);
+            // 
+            // Load
+            // 
+            this.Load.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.Load.Image = ((System.Drawing.Image)(resources.GetObject("Load.Image")));
+            this.Load.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.Load.Name = "Load";
+            this.Load.Size = new System.Drawing.Size(23, 22);
+            this.Load.Text = "Load";
+            this.Load.Click += new System.EventHandler(this.Load_Click);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(30, 100);
@@ -456,7 +480,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MyDrawingForm";
             this.Text = "MyDrawing";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shap_data_GridView)).EndInit();
@@ -507,6 +530,8 @@
         private System.Windows.Forms.ToolStripButton Undo;
         private System.Windows.Forms.ToolStripButton Redo;
         private System.Windows.Forms.ToolStripButton LineState;
+        private System.Windows.Forms.ToolStripButton Save;
+        private System.Windows.Forms.ToolStripButton Load;
     }
 }
 

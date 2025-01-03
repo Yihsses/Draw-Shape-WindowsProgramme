@@ -194,5 +194,16 @@ namespace hw2
             model.EnterLineState(); 
         }
 
+        private  async void Save_Click(object sender, EventArgs e)
+        {
+             await model.SaveAsync();
+        }
+
+        private async void Load_Click(object sender, EventArgs e)
+        {
+            await model.Load();
+            RefreshUI();
+
+        }
     }
 }
